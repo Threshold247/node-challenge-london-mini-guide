@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/CodeYourFuture/node-challenge-london-mini-guide#readme",
   "dependencies": {
+    "express": "^4.18.2",
     "node": "^19.1.0"
   }
 }
