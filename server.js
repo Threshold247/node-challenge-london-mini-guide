@@ -3,7 +3,7 @@ const app = express();
 const port = 3001;
 const heathrowData = require("./data/Heathrow.json");
 const harrowData = require("./data/Harrow.json");
-const startfordData = require("./data/Stratford.json");
+const stratfordData = require("./data/Stratford.json");
 
 app.get("/", (req, res) => {
   console.log(req.method);
@@ -17,12 +17,18 @@ app.get("/heathrow", (req, res) => {
 
 app.get("/harrow", (req, res) => {
   console.log(req.method);
-  res.json(heathrowData);
+  res.json(harrowData);
 });
 
 app.get("/stratford", (req, res) => {
   console.log(req.method);
-  res.json(heathrowData);
+  res.json(stratfordData);
+});
+
+app.get("/stratford/search", (req, res) => {
+  console.log(req.method);
+  const search = req.query.search;
+  res.json(stratfordData[search]);
 });
 
 app.listen(port, (req, res) => {
