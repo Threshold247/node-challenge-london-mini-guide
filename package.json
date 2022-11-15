@@ -1,0 +1,25 @@
+{
+  "name": "challenge-london-mini-guide",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeYourFuture/node-challenge-london-mini-guide.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeYourFuture/node-challenge-london-mini-guide/issues"
+  },
+  "homepage": "https://github.com/CodeYourFuture/node-challenge-london-mini-guide#readme",
+  "dependencies": {
+    "node": "^19.1.0"
+  }
+}
