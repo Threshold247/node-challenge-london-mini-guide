@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3001;
+const port = 3001;
+const heathrowData = "/data/Heathrow.json";
+const harrowData = "/data/Harrow.json";
+const stratfordData = "/data/Stratford.json";
 
 app.get("/", (req, res) => {
   console.log(req.method);
