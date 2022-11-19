@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 const heathrowData = require("../data/Heathrow.json");
 const harrowData = require("../data/Harrow.json");
 const stratfordData = require("../data/Stratford.json");
@@ -10,17 +10,17 @@ app.get("/", (req, res) => {
   res.send("It works");
 });
 
-app.get("/heathrow", (req, res) => {
+app.get("/Heathrow", (req, res) => {
   console.log(req.method);
   res.json(heathrowData);
 });
 
-app.get("/harrow", (req, res) => {
+app.get("/Harrow", (req, res) => {
   console.log(req.method);
   res.json(harrowData);
 });
 
-app.get("/stratford", (req, res) => {
+app.get("/Stratford", (req, res) => {
   console.log(req.method);
   res.json(stratfordData);
 });
