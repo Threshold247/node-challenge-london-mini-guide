@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 const port = 3001;
-const heathrowData = require("./data/Heathrow.json");
-const harrowData = require("./data/Harrow.json");
-const stratfordData = require("./data/Stratford.json");
+const heathrowData = require("../data/Heathrow.json");
+const harrowData = require("../data/Harrow.json");
+const stratfordData = require("../data/Stratford.json");
 
 app.get("/", (req, res) => {
   console.log(req.method);
